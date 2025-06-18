@@ -14,6 +14,8 @@ This is not an endorsement of any particular service, but it may help some strea
 
 If you'd like to expand on this and send automated notifications to other destinations, create a custom [webhook](/thirdparty/webhooks/).
 
+Note: notifications will only be sent after your stream has been live for 2 minutes, and no notifications will be sent if your stream has already notified within the last 10 minutes.
+
 {{<versionsupport feature="External notification" version="0.0.12">}}
 
 ## Browser notifications
@@ -49,6 +51,8 @@ You can notify a Discord channel when your stream goes live. Visit the [Discord 
 - Visit Edit Channel / Integrations on your Discord channel.
 - Create a webhook.
 - Provide URL in the Owncast configuration.
+
+Note: the webhook is not sent to Discord until your stream has been live for 2 minutes
 
 ## Twitter (deprecated)
 
